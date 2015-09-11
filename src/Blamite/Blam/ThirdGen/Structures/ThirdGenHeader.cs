@@ -207,6 +207,10 @@ namespace Blamite.Blam.ThirdGen.Structures
 			// TODO: This could possibly be made into a for loop and cleaned up if the pointer converters are stored in an array.
 			// I just want to get this working for now.
 			//rsrcSection.VirtualAddress = 0; // This is (not) always zero
+
+			if (cacheSegmentAlignment == 0x800)
+				rsrcSection.VirtualAddress = 0x800; // hax for h3b saving, sections aren't in the same order as final
+
 			rsrcSection.Size = (ResourcePointerConverter != null) ? (uint) RawTable.Size : 0;
 			localeSection.VirtualAddress = (LocalePointerConverter != null) ? rsrcSection.VirtualAddress + rsrcSection.Size : 0;
 			localeSection.Size = (LocalePointerConverter != null) ? (uint) localeArea.Size : 0;
