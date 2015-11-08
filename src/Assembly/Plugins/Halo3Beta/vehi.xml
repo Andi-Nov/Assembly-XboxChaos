@@ -410,7 +410,9 @@
 		<option name="Quiet" value="0x4" />
 	</enum16>
 	<reflexive name="Metagame Properties" offset="0x100" visible="true" entrySize="0x8">
-		<int8 name="Unit Kind" offset="0x0" visible="true" />
+		<bitfield8 name="Flags" offset="0x0" visible="true">
+			<bit name="Must Have Active Seats" index="0" />
+		</bitfield8>
 		<int8 name="Unit" offset="0x1" visible="true" />
 		<int8 name="Classification" offset="0x2" visible="true" />
 		<int8 name="Unknown" offset="0x3" visible="false" />

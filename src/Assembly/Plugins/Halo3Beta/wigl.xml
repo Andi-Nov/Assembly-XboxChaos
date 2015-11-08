@@ -87,10 +87,10 @@
 	<float32 name="Standard Bitmap Scale Y" offset="0xBC" visible="true" />
 	<float32 name="Menu Blur X" offset="0xC0" visible="true" />
 	<float32 name="Menu Blur Y" offset="0xC4" visible="true" />
-	<ascii name="Unknown" offset="0xC8" length="20" visible="true" />
-	<ascii name="Appearance" offset="0xE8" length="20" visible="true" />
-	<stringid name="UI Spartan" offset="0x108" visible="true" />
-	<ascii name="Unknown" offset="0x10C" length="20" visible="true" />
-	<ascii name="Appearance" offset="0x12C" length="20" visible="true" />
-	<stringid name="UI Elite" offset="0x14C" visible="true" />
+	<ascii name="UI Spartan Biped Name" offset="0xC8" length="0x20" visible="true" />
+	<ascii name="UI Spartan AI Squad Name" offset="0xE8" length="0x20" visible="true" />
+	<stringid name="UI Spartan AI Location Name" offset="0x108" visible="true" />
+	<ascii name="UI Elite Biped Name" offset="0x10C" length="0x20" visible="true" />
+	<ascii name="UI Elite AI Squad Name" offset="0x12C" length="0x20" visible="true" />
+	<stringid name="UI Elite AI Location Name" offset="0x14C" visible="true" />
 </plugin>

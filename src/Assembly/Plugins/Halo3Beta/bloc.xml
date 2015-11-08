@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <plugin game="Halo3Beta" baseSize="0xFC">
 	<!-- Automatically generated plugin -->
 	<revisions>
@@ -368,5 +368,5 @@
 		<bit name="Bit 14" index="14" />
 		<bit name="Bit 15" index="15" />
 	</bitfield16>
-	<int16 name="Unknown" offset="0xFE" visible="false" />
+	<int16 name="Unknown" offset="0xFA" visible="false" />
 </plugin>

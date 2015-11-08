@@ -15,62 +15,7 @@
 		<stringid name="Unknown" offset="0x10" visible="false" />
 	</reflexive>
 	<reflexive name="Shared Caches" offset="0x18" visible="true" entrySize="0x100">
-		<ascii name="Map Path" offset="0x0" visible="true" length="0x20" />
-		<undefined name="Unknown" offset="0x24" visible="false" />
-		<undefined name="Unknown" offset="0x28" visible="false" />
-		<undefined name="Unknown" offset="0x2C" visible="false" />
-		<undefined name="Unknown" offset="0x30" visible="false" />
-		<undefined name="Unknown" offset="0x34" visible="false" />
-		<undefined name="Unknown" offset="0x38" visible="false" />
-		<undefined name="Unknown" offset="0x3C" visible="false" />
-		<undefined name="Unknown" offset="0x40" visible="false" />
-		<undefined name="Unknown" offset="0x44" visible="false" />
-		<undefined name="Unknown" offset="0x48" visible="false" />
-		<undefined name="Unknown" offset="0x4C" visible="false" />
-		<undefined name="Unknown" offset="0x50" visible="false" />
-		<undefined name="Unknown" offset="0x54" visible="false" />
-		<undefined name="Unknown" offset="0x58" visible="false" />
-		<undefined name="Unknown" offset="0x5C" visible="false" />
-		<undefined name="Unknown" offset="0x60" visible="false" />
-		<undefined name="Unknown" offset="0x64" visible="false" />
-		<undefined name="Unknown" offset="0x68" visible="false" />
-		<undefined name="Unknown" offset="0x6C" visible="false" />
-		<undefined name="Unknown" offset="0x70" visible="false" />
-		<undefined name="Unknown" offset="0x74" visible="false" />
-		<undefined name="Unknown" offset="0x78" visible="false" />
-		<undefined name="Unknown" offset="0x7C" visible="false" />
-		<undefined name="Unknown" offset="0x80" visible="false" />
-		<undefined name="Unknown" offset="0x84" visible="false" />
-		<undefined name="Unknown" offset="0x88" visible="false" />
-		<undefined name="Unknown" offset="0x8C" visible="false" />
-		<undefined name="Unknown" offset="0x90" visible="false" />
-		<undefined name="Unknown" offset="0x94" visible="false" />
-		<undefined name="Unknown" offset="0x98" visible="false" />
-		<undefined name="Unknown" offset="0x9C" visible="false" />
-		<undefined name="Unknown" offset="0xA0" visible="false" />
-		<undefined name="Unknown" offset="0xA4" visible="false" />
-		<undefined name="Unknown" offset="0xA8" visible="false" />
-		<undefined name="Unknown" offset="0xAC" visible="false" />
-		<undefined name="Unknown" offset="0xB0" visible="false" />
-		<undefined name="Unknown" offset="0xB4" visible="false" />
-		<undefined name="Unknown" offset="0xB8" visible="false" />
-		<undefined name="Unknown" offset="0xBC" visible="false" />
-		<undefined name="Unknown" offset="0xC0" visible="false" />
-		<undefined name="Unknown" offset="0xC4" visible="false" />
-		<undefined name="Unknown" offset="0xC8" visible="false" />
-		<undefined name="Unknown" offset="0xCC" visible="false" />
-		<undefined name="Unknown" offset="0xD0" visible="false" />
-		<undefined name="Unknown" offset="0xD4" visible="false" />
-		<undefined name="Unknown" offset="0xD8" visible="false" />
-		<undefined name="Unknown" offset="0xDC" visible="false" />
-		<undefined name="Unknown" offset="0xE0" visible="false" />
-		<undefined name="Unknown" offset="0xE4" visible="false" />
-		<undefined name="Unknown" offset="0xE8" visible="false" />
-		<undefined name="Unknown" offset="0xEC" visible="false" />
-		<undefined name="Unknown" offset="0xF0" visible="false" />
-		<undefined name="Unknown" offset="0xF4" visible="false" />
-		<undefined name="Unknown" offset="0xF8" visible="false" />
-		<undefined name="Unknown" offset="0xFC" visible="false" />
+		<ascii name="Map Path" offset="0x0" visible="true" length="0x100" />
 	</reflexive>
 	<reflexive name="Tag Resources" offset="0x24" visible="false" entrySize="0x60">
 		<comment title="Standard Zone Stuff" />
@@ -93,15 +38,48 @@
 		<uint32 name="Secondary Block Size" offset="0x3C" visible="true" />
 		<uint32 name="Unknown" offset="0x40" visible="true" />
 		<comment title="Back To Standard Zone" />
-		<int32 name="Unknown" offset="0x44" visible="true" />
+		<bitfield8 name="Root Definition Address Location/High Bits" offset="0x44" visible="true">
+			<bit name="Bit 0" index="0" />
+			<bit name="Bit 1" index="1" />
+			<bit name="Bit 2" index="2" />
+			<bit name="Bit 3" index="3" />
+			<bit name="Bit 4" index="4" />
+			<bit name="Fixup" index="5" />
+			<bit name="Raw Page" index="6" />
+			<bit name="Bit 7" index="7" />
+		</bitfield8>
+		<uint8 name="Root Definition Address Upper Bits" offset="0x45" visible="true" />
+		<uint16 name="Root Definition Address" offset="0x46" visible="true" />
 		<reflexive name="Resource Fixups" offset="0x48" visible="true" entrySize="0x8">
 			<comment title="Members">Block Offset: [offset in tag data sub-buffer].
 Address: fix-up address (either in the data sub-buffer, or a cache-resource offset.</comment>
 			<int32 name="Block Offset" offset="0x0" visible="true" />
-			<int32 name="Address" offset="0x4" visible="true" />
+			<bitfield8 name="Address Location/High Bits" offset="0x4" visible="true">
+				<bit name="Bit 0" index="0" />
+				<bit name="Bit 1" index="1" />
+				<bit name="Bit 2" index="2" />
+				<bit name="Bit 3" index="3" />
+				<bit name="Bit 4" index="4" />
+				<bit name="Fixup" index="5" />
+				<bit name="Raw Page" index="6" />
+				<bit name="Bit 7" index="7" />
+			</bitfield8>
+			<uint8 name="Address Upper Bits" offset="0x5" visible="true" />
+			<uint16 name="Address" offset="0x6" visible="true" />
 		</reflexive>
 		<reflexive name="Resource Definition Fixups" offset="0x54" visible="true" entrySize="0x8">
-			<int32 name="Offset" offset="0x0" visible="true" />
+			<bitfield8 name="Offset Location/High Bits" offset="0x0" visible="true">
+				<bit name="Bit 0" index="0" />
+				<bit name="Bit 1" index="1" />
+				<bit name="Bit 2" index="2" />
+				<bit name="Bit 3" index="3" />
+				<bit name="Bit 4" index="4" />
+				<bit name="Fixup" index="5" />
+				<bit name="Raw Page" index="6" />
+				<bit name="Bit 7" index="7" />
+			</bitfield8>
+			<uint8 name="Offset Upper Bits" offset="0x1" visible="true" />
+			<uint16 name="Offset" offset="0x2" visible="true" />
 			<int32 name="Resource Structure Type Index" offset="0x4" visible="true" />
 		</reflexive>
 	</reflexive>

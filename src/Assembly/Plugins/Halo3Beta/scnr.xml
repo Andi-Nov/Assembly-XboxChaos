@@ -409,15 +409,12 @@
 		<int16 name="Unknown" offset="0x4A" visible="false" />
 		<comment title="Permutation Data" />
 		<stringid name="Variant" offset="0x4C" visible="true" />
-		<bitfield8 name="Active Change Colors" offset="0x50" visible="true">
+		<bitfield32 name="Active Change Colors" offset="0x50" visible="true">
 			<bit name="Primary" index="0" />
 			<bit name="Secondary" index="1" />
 			<bit name="Tertiary" index="2" />
 			<bit name="Quaternary" index="3" />
-		</bitfield8>
-		<int8 name="Unknown" offset="0x51" visible="false" />
-		<int8 name="Unknown" offset="0x52" visible="false" />
-		<int8 name="Unknown" offset="0x53" visible="false" />
+		</bitfield32>
 		<colour32 name="Primary Color" offset="0x54" format="argb" visible="true" />
 		<colour32 name="Secondary Color" offset="0x58" format="argb" visible="true" />
 		<colour32 name="Tertiary Color" offset="0x5C" format="argb" visible="true" />
@@ -634,15 +631,12 @@
 		<int16 name="Unknown" offset="0x4A" visible="false" />
 		<comment title="Permutation Data" />
 		<stringid name="Variant" offset="0x4C" visible="true" />
-		<bitfield8 name="Active Change Colors" offset="0x50" visible="true">
+		<bitfield32 name="Active Change Colors" offset="0x50" visible="true">
 			<bit name="Primary" index="0" />
 			<bit name="Secondary" index="1" />
 			<bit name="Tertiary" index="2" />
 			<bit name="Quaternary" index="3" />
-		</bitfield8>
-		<int8 name="Unknown" offset="0x51" visible="false" />
-		<int8 name="Unknown" offset="0x52" visible="false" />
-		<int8 name="Unknown" offset="0x53" visible="false" />
+		</bitfield32>
 		<colour32 name="Primary Color" offset="0x54" format="argb" visible="true" />
 		<colour32 name="Secondary Color" offset="0x58" format="argb" visible="true" />
 		<colour32 name="Tertiary Color" offset="0x5C" format="argb" visible="true" />
@@ -818,15 +812,12 @@
 		<int16 name="Unknown" offset="0x4A" visible="false" />
 		<comment title="Permutation Data" />
 		<stringid name="Variant" offset="0x4C" visible="true" />
-		<bitfield8 name="Active Change Colors" offset="0x50" visible="true">
+		<bitfield32 name="Active Change Colors" offset="0x50" visible="true">
 			<bit name="Primary" index="0" />
 			<bit name="Secondary" index="1" />
 			<bit name="Tertiary" index="2" />
 			<bit name="Quaternary" index="3" />
-		</bitfield8>
-		<int8 name="Unknown" offset="0x51" visible="false" />
-		<int8 name="Unknown" offset="0x52" visible="false" />
-		<int8 name="Unknown" offset="0x53" visible="false" />
+		</bitfield32>
 		<colour32 name="Primary Color" offset="0x54" format="argb" visible="true" />
 		<colour32 name="Secondary Color" offset="0x58" format="argb" visible="true" />
 		<colour32 name="Tertiary Color" offset="0x5C" format="argb" visible="true" />
@@ -1286,15 +1277,12 @@
 		<int16 name="Unknown" offset="0x4A" visible="false" />
 		<comment title="Permutation Data" />
 		<stringid name="Variant" offset="0x4C" visible="true" />
-		<bitfield8 name="Active Change Colors" offset="0x50" visible="true">
+		<bitfield32 name="Active Change Colors" offset="0x50" visible="true">
 			<bit name="Primary" index="0" />
 			<bit name="Secondary" index="1" />
 			<bit name="Tertiary" index="2" />
 			<bit name="Quaternary" index="3" />
-		</bitfield8>
-		<int8 name="Unknown" offset="0x51" visible="false" />
-		<int8 name="Unknown" offset="0x52" visible="false" />
-		<int8 name="Unknown" offset="0x53" visible="false" />
+		</bitfield32>
 		<colour32 name="Primary Color" offset="0x54" format="argb" visible="true" />
 		<colour32 name="Secondary Color" offset="0x58" format="argb" visible="true" />
 		<colour32 name="Tertiary Color" offset="0x5C" format="argb" visible="true" />
@@ -3673,15 +3661,12 @@
 		<int16 name="Unknown" offset="0x4A" visible="false" />
 		<comment title="Permutation Data" />
 		<stringid name="Variant" offset="0x4C" visible="true" />
-		<bitfield8 name="Active Change Colors" offset="0x50" visible="true">
+		<bitfield32 name="Active Change Colors" offset="0x50" visible="true">
 			<bit name="Primary" index="0" />
 			<bit name="Secondary" index="1" />
 			<bit name="Tertiary" index="2" />
 			<bit name="Quaternary" index="3" />
-		</bitfield8>
-		<int8 name="Unknown" offset="0x51" visible="false" />
-		<int8 name="Unknown" offset="0x52" visible="false" />
-		<int8 name="Unknown" offset="0x53" visible="false" />
+		</bitfield32>
 		<colour32 name="Primary Color" offset="0x54" format="argb" visible="true" />
 		<colour32 name="Secondary Color" offset="0x58" format="argb" visible="true" />
 		<colour32 name="Tertiary Color" offset="0x5C" format="argb" visible="true" />
