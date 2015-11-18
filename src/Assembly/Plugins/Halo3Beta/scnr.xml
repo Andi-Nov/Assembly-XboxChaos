@@ -1627,7 +1627,7 @@
 		</bitfield32>
 		<reflexive name="Pathfinding References" offset="0x58" visible="true" entrySize="0x4">
 			<int16 name="BSP Index" offset="0x0" visible="true" />
-			<int16 name="Pathfinding Object Index" offset="0x0" visible="true" />
+			<int16 name="Pathfinding Object Index" offset="0x2" visible="true" />
 		</reflexive>
 	</reflexive>
 	<reflexive name="Machine Palette" offset="0x138" visible="true" entrySize="0x30">
@@ -3351,7 +3351,7 @@
 		<undefined name="Unknown" offset="0x44" visible="true" />
 		<reflexive name="Dynamic Spawn Overloads" offset="0x48" visible="true" entrySize="0x10">
 			<int16 name="Overload Type" offset="0x0" visible="true" />
-			<int16 name="Unknown" offset="0x0" visible="true" />
+			<int16 name="Unknown" offset="0x2" visible="true" />
 			<float32 name="Inner Radius" offset="0x4" visible="true" />
 			<float32 name="Outer Radius" offset="0x8" visible="true" />
 			<float32 name="Weight" offset="0xC" visible="true" />
