@@ -481,7 +481,7 @@
 			<bit name="Bit 7" index="7" />
 		</bitfield8>
 		<int16 name="Spawn Time" offset="0x84" visible="true" />
-		<int16 name="Unknown Spawn Time" offset="0x86" visible="true" />
+		<int16 name="Abandon Time" offset="0x86" visible="true" />
 		<int8 name="Unknown" offset="0x88" visible="false" />
 		<enum8 name="Shape" offset="0x89" visible="true">
 			<option name="None" value="0x0" />
@@ -901,7 +901,7 @@
 			<bit name="Bit 7" index="7" />
 		</bitfield8>
 		<int16 name="Spawn Time" offset="0x78" visible="true" />
-		<int16 name="Unknown Spawn Time" offset="0x7A" visible="true" />
+		<int16 name="Abandon Time" offset="0x7A" visible="true" />
 		<int8 name="Unknown" offset="0x7C" visible="false" />
 		<enum8 name="Shape" offset="0x7D" visible="true">
 			<option name="None" value="0x0" />
@@ -1127,7 +1127,7 @@
 			<bit name="Bit 7" index="7" />
 		</bitfield8>
 		<int16 name="Spawn Time" offset="0x5C" visible="true" />
-		<int16 name="Unknown Spawn Time" offset="0x5E" visible="true" />
+		<int16 name="Abandon Time" offset="0x5E" visible="true" />
 		<int8 name="Unknown" offset="0x60" visible="false" />
 		<enum8 name="Shape" offset="0x61" visible="true">
 			<option name="None" value="0x0" />
@@ -1367,7 +1367,7 @@
 			<bit name="Bit 7" index="7" />
 		</bitfield8>
 		<int16 name="Spawn Time" offset="0x78" visible="true" />
-		<int16 name="Unknown Spawn Time" offset="0x7A" visible="true" />
+		<int16 name="Abandon Time" offset="0x7A" visible="true" />
 		<int8 name="Unknown" offset="0x7C" visible="false" />
 		<enum8 name="Shape" offset="0x7D" visible="true">
 			<option name="None" value="0x0" />
@@ -3719,7 +3719,7 @@
 			<bit name="Bit 7" index="7" />
 		</bitfield8>
 		<int16 name="Spawn Time" offset="0x80" visible="true" />
-		<int16 name="Unknown Spawn Time" offset="0x82" visible="true" />
+		<int16 name="Abandon Time" offset="0x82" visible="true" />
 		<int8 name="Unknown" offset="0x84" visible="false" />
 		<enum8 name="Shape" offset="0x85" visible="true">
 			<option name="None" value="0x0" />
