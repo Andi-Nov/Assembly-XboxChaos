@@ -306,8 +306,7 @@
 			<bit name="Allows Flying Vehicles" index="3" />
 			<bit name="Allows Projectiles" index="4" />
 		</bitfield8>
-		<int8 name="Unknown" offset="0x4" visible="false" />
-		<bitfield8 name="Flags" offset="0x5" visible="true">
+		<bitfield16 name="Flags" offset="0x4" visible="true">
 			<bit name="Editor Only" index="0" />
 			<bit name="Bit 1" index="1" />
 			<bit name="Bit 2" index="2" />
@@ -316,7 +315,15 @@
 			<bit name="Bit 5" index="5" />
 			<bit name="Bit 6" index="6" />
 			<bit name="Bit 7" index="7" />
-		</bitfield8>
+			<bit name="Bit 8" index="8" />
+			<bit name="Bit 9" index="9" />
+			<bit name="Bit 10" index="10" />
+			<bit name="Bit 11" index="11" />
+			<bit name="Bit 12" index="12" />
+			<bit name="Bit 13" index="13" />
+			<bit name="Bit 14" index="14" />
+			<bit name="Bit 15" index="15" />
+		</bitfield16>
 		<enum8 name="Shape" offset="0x6" visible="true">
 			<option name="None" value="0x0" />
 			<option name="Sphere" value="0x1" />
@@ -441,9 +448,14 @@
 	</bitfield16>
 	<float32 name="Unknown" offset="0x1B8" visible="false" />
 	<float32 name="Unknown" offset="0x1BC" visible="false" />
-	<undefined name="Unknown" offset="0x1C0" visible="false" />
-	<undefined name="Unknown" offset="0x1C4" visible="false" />
-	<undefined name="Unknown" offset="0x1C8" visible="false" />
+	<reflexive name="Health Pack" offset="0x1C0" visible="true" entrySize="0x3C">
+		<float32 name="Unknown" offset="0x0" visible="false" />
+		<float32 name="Unknown" offset="0x4" visible="false" />
+		<float32 name="Shields Given" offset="0x8" visible="true" />
+		<tagRef name="Unknown" offset="0xC" visible="true" />
+		<tagRef name="Unknown" offset="0x1C" visible="true" />
+		<tagRef name="Unknown" offset="0x2C" visible="true" />
+	</reflexive>
 	<reflexive name="Powerup" offset="0x1CC" visible="true" entrySize="0x4">
 		<enum32 name="Powerup Trait Set" offset="0x0" visible="true">
 			<option name="Red" value="0x0" />
@@ -468,18 +480,28 @@
 		<float32 name="Unknown" offset="0x28" visible="false" />
 		<float32 name="Unknown" offset="0x2C" visible="false" />
 	</reflexive>
-	<undefined name="Unknown" offset="0x1F0" visible="false" />
-	<undefined name="Unknown" offset="0x1F4" visible="false" />
-	<undefined name="Unknown" offset="0x1F8" visible="false" />
-	<undefined name="Unknown" offset="0x1FC" visible="false" />
-	<undefined name="Unknown" offset="0x200" visible="false" />
-	<undefined name="Unknown" offset="0x204" visible="false" />
-	<undefined name="Unknown" offset="0x208" visible="false" />
-	<undefined name="Unknown" offset="0x20C" visible="false" />
-	<undefined name="Unknown" offset="0x210" visible="false" />
-	<undefined name="Unknown" offset="0x214" visible="false" />
-	<undefined name="Unknown" offset="0x218" visible="false" />
-	<undefined name="Unknown" offset="0x21C" visible="false" />
+	<reflexive name="Radar Manipulation" offset="0x1F0" visible="true" entrySize="0x10">
+		<float32 name="Unknown" offset="0x0" visible="false" />
+		<float32 name="Fake Blip Radius" offset="0x4" visible="true" />
+		<int32 name="Fake Blip Count" offset="0x8" visible="true" />
+		<float32 name="Unknown" offset="0xC" visible="false" />
+	</reflexive>
+	<undefined name="Null" offset="0x1FC" visible="false" />
+	<undefined name="Null" offset="0x200" visible="false" />
+	<undefined name="Null" offset="0x204" visible="false" />
+	<reflexive name="Invisibility" offset="0x208" visible="true" entrySize="0x8">
+		<float32 name="Unknown" offset="0x0" visible="true" />
+		<float32 name="Unknown" offset="0x4" visible="true" />
+	</reflexive>
+	<reflexive name="Invincibility" offset="0x214" visible="true" entrySize="0x3C">
+		<stringid name="Material Name" offset="0x0" visible="true" />
+		<int16 name="Global Material Index" offset="0x4" visible="true" />
+		<int16 name="Unknown" offset="0x6" visible="false" />
+		<undefined name="Unknown" offset="0x8" visible="false" />
+		<tagRef name="Activation Effect" offset="0xC" visible="true" />
+		<tagRef name="Active Effect" offset="0x1C" visible="true" />
+		<tagRef name="Deactivation Effect" offset="0x2C" visible="true" />
+	</reflexive>
 	<tagRef name="HUD Interface" offset="0x220" visible="true" />
 	<tagRef name="Pickup Sound" offset="0x230" visible="true" />
 	<tagRef name="Activation Effect" offset="0x240" visible="true" />

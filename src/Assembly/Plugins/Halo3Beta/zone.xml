@@ -203,7 +203,7 @@ If a bit is enabled then that member will be loaded.</comment>
 		<undefined name="Unknown" offset="0x38" visible="false" />
 		<undefined name="Unknown" offset="0x3C" visible="false" />
 		<stringid name="Set Name" offset="0x40" visible="true" />
-		<reflexive name="Unknown" offset="0x44" visible="false" entrySize="0x14">
+		<reflexive name="Resource Types" offset="0x44" visible="false" entrySize="0x14">
 			<undefined name="Unknown" offset="0x0" visible="false" />
 			<undefined name="Unknown" offset="0x4" visible="false" />
 			<undefined name="Unknown" offset="0x8" visible="false" />
@@ -364,7 +364,7 @@ If a bit is enabled then that member will be loaded.</comment>
 		<undefined name="Unknown" offset="0x38" visible="false" />
 		<undefined name="Unknown" offset="0x3C" visible="false" />
 		<stringid name="Set Name" offset="0x40" visible="true" />
-		<reflexive name="Unknown" offset="0x44" visible="false" entrySize="0x14">
+		<reflexive name="Resource Types" offset="0x44" visible="false" entrySize="0x14">
 			<undefined name="Unknown" offset="0x0" visible="false" />
 			<undefined name="Unknown" offset="0x4" visible="false" />
 			<undefined name="Unknown" offset="0x8" visible="false" />
@@ -525,7 +525,7 @@ If a bit is enabled then that member will be loaded.</comment>
 		<undefined name="Unknown" offset="0x38" visible="false" />
 		<undefined name="Unknown" offset="0x3C" visible="false" />
 		<stringid name="Set Name" offset="0x40" visible="true" />
-		<reflexive name="Unknown" offset="0x44" visible="false" entrySize="0x14">
+		<reflexive name="Resource Types" offset="0x44" visible="false" entrySize="0x14">
 			<undefined name="Unknown" offset="0x0" visible="false" />
 			<undefined name="Unknown" offset="0x4" visible="false" />
 			<undefined name="Unknown" offset="0x8" visible="false" />
@@ -689,7 +689,7 @@ If a bit is enabled then that member will be loaded.</comment>
 		<undefined name="Unknown" offset="0x38" visible="false" />
 		<undefined name="Unknown" offset="0x3C" visible="false" />
 		<stringid name="Set Name" offset="0x40" visible="true" />
-		<reflexive name="Unknown" offset="0x44" visible="false" entrySize="0x14">
+		<reflexive name="Resource Types" offset="0x44" visible="false" entrySize="0x14">
 			<undefined name="Unknown" offset="0x0" visible="false" />
 			<undefined name="Unknown" offset="0x4" visible="false" />
 			<undefined name="Unknown" offset="0x8" visible="false" />
